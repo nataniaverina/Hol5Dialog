@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="27dp"
+        android:text="ENTER"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/proteinconsume" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="309dp"
+        android:text="RESET"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/proteinconsume" />
+
+    <EditText
+        android:id="@+id/proteinconsume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="290dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnReset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ProteinConsume"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hasiltotaldays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="62dp"
+        app:layout_constraintEnd_toStartOf="@+id/hasilgoal"
+        app:layout_constraintStart_toStartOf="@+id/hasilgoal"
+        app:layout_constraintTop_toBottomOf="@+id/enter" />
+
+    <TextView
+        android:id="@+id/hasilgoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/hasilneeded"
+        app:layout_constraintStart_toStartOf="@+id/hasilneeded"
+        app:layout_constraintTop_toBottomOf="@+id/hasiltotaldays" />
+
+    <TextView
+        android:id="@+id/hasilneeded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="19dp"
+        app:layout_constraintStart_toEndOf="@+id/needed"
+        app:layout_constraintTop_toBottomOf="@+id/hasilgoal" />
+
+    <TextView
+        android:id="@+id/goal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Goal :"
+        app:layout_constraintBaseline_toBaselineOf="@+id/hasilgoal"
+        app:layout_constraintEnd_toEndOf="@+id/totaldays" />
+
+    <TextView
+        android:id="@+id/needed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Needed :"
+        app:layout_constraintBaseline_toBaselineOf="@+id/hasilneeded"
+        app:layout_constraintEnd_toEndOf="@+id/goal" />
+
+    <TextView
+        android:id="@+id/ProteinConsume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="1dp"
+        android:text="Protein Consume :"
+        app:layout_constraintEnd_toStartOf="@+id/proteinconsume"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/totaldays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:text="Total of Days :"
+        app:layout_constraintBaseline_toBaselineOf="@+id/hasiltotaldays"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
